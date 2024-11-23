@@ -1,12 +1,12 @@
+import HeroCarousel from "@/components/HeroCarousel";
 import Searchbar from "@/components/Searchbar";
 import React from "react";
 
 const Home = () => {
   return (
     <>
-      <section className="px-6 md:px-20 py-12 border-2">
-        {/* Change flex-col to just flex later */}
-        <div className="flex-col max-sl:flex-col gap-16">
+      <section className="px-6 md:px-20 py-12">
+        <div className="flex max-sl:flex-col gap-16">
           <div className="flex flex-col justify-center">
             <h1 className="head-text">
               Save Big Using
@@ -18,7 +18,7 @@ const Home = () => {
             </p>
             <Searchbar />
           </div>
-          HeroCarousel
+          <HeroCarousel />
         </div>
       </section>
       <section className="trending-section">
